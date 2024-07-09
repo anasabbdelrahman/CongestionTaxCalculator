@@ -14,7 +14,7 @@ Ensure you have met the following requirements:
 - **Java Development Kit (JDK) 8 or later**: You need the JDK to compile and run Java applications.
 
 ## Installation
-Follow these steps to install and set up your project:
+Follow these steps to install and set up the project:
 
 ```sh
 # Clone the repository
@@ -25,7 +25,7 @@ git clone https://github.com/anasabbdelrahman/CongestionTaxCalculator.git
 
 # Check CongestionTaxCalculator.java class to find the list of dates and assert the results
 
-# Run the using Spring boot
+# Run the application using Spring boot
 ./mvnw spring-boot:run
 
 # To calculate the congestion tax fee for a vehicle, send a GET request using Postman or browser in following URL format:
@@ -35,7 +35,7 @@ http://localhost:8080/api/congestion-tax/calculate?vehicleType={vehicleType}&dat
 http://localhost:8080/api/congestion-tax/calculate?vehicleType=car&dates=2013-01-14 21:00:00&dates=2013-01-15 21:00:00&dates=2013-02-07 06:23:27&dates=2013-02-07 15:27:00&dates=2013-02-08 06:27:00&dates=2013-02-08 06:20:00&dates=2013-02-08 14:35:00&dates=2013-02-08 15:29:00&dates=2013-02-08 15:47:00&dates=2013-02-08 16:01:00&dates=2013-02-08 16:48:00&dates=2013-02-08 17:49:00&dates=2013-02-08 18:29:00&dates=2013-02-08 18:35:00&dates=2013-03-26 14:25:00&dates=2013-03-28 14:07:00
 ```
 
-# Future Improvment
-- Replace GET API with POST using JSON object, which can handle list of vehicles.
-- Also can handle huge numbe of dates.
-- Using document database such MongoDB to handle the intervals and prices more dynamic. Also can add other cities with different tax charges.
+# Future Improvement:
+- Replace GET API with POST using JSON object to avoid URL length limitation and security issues
+and can handle a huge number of transactions.
+- Using document database such as MongoDB to have a flexible schema and dynamic data handling such as adding other cities with different tax charges.
