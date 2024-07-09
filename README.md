@@ -20,9 +20,6 @@ Follow these steps to install and set up your project:
 # Clone the repository
 git clone https://github.com/anasabbdelrahman/CongestionTaxCalculator.git
 
-# Navigate to the project directory
-cd demo
-
 # Run the application using JUnit test
 ./mvnw clean test
 
